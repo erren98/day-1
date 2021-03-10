@@ -1,0 +1,22 @@
+import java.util.*;
+public class School {
+	
+	public static void main(String[] args) {
+			System.out.println("Hello !!");
+			Student student = new Student();
+			//student.name = "Ram"; //avoid as it can cause misuse
+			
+			//Using Getter and Setter 
+			student.setName("");
+			
+			
+			System.out.println(student.getName());
+			
+		
+	}
+	
+	
+	
+	
+
+}

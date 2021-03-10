@@ -1,0 +1,13 @@
+package com.ibm;
+
+import com.A;
+
+public class B extends A {
+	int age = 10;
+	void m1() {
+		System.out.println(age);
+	}
+	
+	
+
+}
