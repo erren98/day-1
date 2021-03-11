@@ -1,6 +1,10 @@
 
 public class Order{
 	
+	Order(){
+		System.out.println("Order Created !!...");
+	}
+	
 	Order(int orderId, String itemName){
 		this.orderId = orderId;
 		this.itemName = itemName;

@@ -3,12 +3,12 @@ public class StringDemo {
 	
 	public static void main(String[] args) {
 		
-		//withoutStringPool();
-		//usingStringPool();
+		withoutStringPool();
+		usingStringPool();
 		//withStringBuilder(); // Using StringBuilder , every time it creates in heap area
 								// And creats new object everytime
 		
-		dataManipulation();
+		//dataManipulation();
 	}
 	
 	//Here 3 objects will be created

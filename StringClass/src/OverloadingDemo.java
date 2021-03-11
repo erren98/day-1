@@ -18,6 +18,7 @@ public class OverloadingDemo {
 
 class Student1 {
 	
+	//Method overloading
 	public static void study(int duration,String subject) {
 		System.out.println("study.." + duration + " hours " + subject);
 		

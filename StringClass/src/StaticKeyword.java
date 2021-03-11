@@ -4,7 +4,7 @@ public class StaticKeyword {
 	public static void main(String[] args) {
 		Student s1 = new Student();
 		Student s2 = new Student();
-		//Student.setCount(1);
+		
 		s1.setCount(2);
 		System.out.println(s1.getCount());
 		System.out.println(s2.getCount());
