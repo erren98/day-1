@@ -1,5 +1,6 @@
 package variableDemo;
 
+
 public class Book {
 	int a = 0; // Instance variable
 
@@ -18,6 +19,7 @@ public class Book {
 
 	public static void main(String[] args) {
 		Book book = new Book();
+		book.
 		book.m();
 	}
 

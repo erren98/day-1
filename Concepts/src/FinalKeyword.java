@@ -1,7 +1,7 @@
 
 public class FinalKeyword {
 	public static void main(String[] args) {
-		Parent child = new Child();
+		Parent child = new Parent();
 		// Refernce     //type of Object
 
 		// Overridng a method depends on the type of the object made
@@ -16,6 +16,10 @@ public class FinalKeyword {
 class Parent {
 	//Final variable has to be initialized
 	final String name = "Abhishek";
+	Parent(){
+		Child child = new Child();
+		child.m2();
+	}
 	
 	
 	// We cannot change the value of the final variable
@@ -48,6 +52,7 @@ class Child extends Parent {
 	}	
 	@Override
 	void m2() {
+		System.out.println("Hello");
 		
 	}
 }
