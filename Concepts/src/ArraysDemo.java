@@ -1,22 +1,28 @@
 
 public class ArraysDemo {
 	public static void main(String[] args) {
+		//Method 1
 //		int[] scores = new int[10];
 //		// printing the values
 //		for (int i = 0; i < scores.length; i++) {
 //			System.out.println(scores[i]);
 //		}
+		
+		//Method 2	
 //		int[] numbers = { 1, 2, 4, 5 };
 //		// printing values
 //		for (int i = 0; i < numbers.length; i++) {
 //			System.out.println(numbers[i]);
 //		}
-//		//boolean
+		
+		//Method 3
+//		//boolean values
 //		boolean[] booleans = {true,false};
 //		for (boolean b : booleans) {//for each
 //			System.out.println(b);
 //		}
 //		
+		//Method 4
 //		String[] names = new String[10]; //Creates only one Array object with capacity 10
 //		for (String name : names) {	//No string object is created here
 //			name = new String("Ram"); //goes to heap, 10 objects

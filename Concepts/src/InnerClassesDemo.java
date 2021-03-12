@@ -10,7 +10,7 @@ public class InnerClassesDemo {
 
 class Account {
 	// private Address address;
-	//creation of reference of the address class
+	//creation of reference of the inner address class
 	private Address[] addresses; // multiple address can be handled
 	private int number;
 	//Lazy initalization

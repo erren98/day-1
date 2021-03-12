@@ -10,6 +10,7 @@ public class Book {
 		System.out.println(this.a);
 		if (a == 10) {
 			int b = 20; //block-level variable
+						//Defined inside the conditional block
 
 		}
 		System.out.println(a);
