@@ -1,4 +1,4 @@
-//Book class is in different package to be acessible to all other packages
+//Book class is in different package to be accessible to all other packages
 package com.ibm;
 public class Book{
 	private String title;
@@ -14,6 +14,7 @@ public class Book{
 	}
 
 	public float getPrice() {
+		
 		return price;
 	}
 

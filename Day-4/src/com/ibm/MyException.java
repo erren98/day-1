@@ -1,6 +1,6 @@
 package com.ibm;
 
-//Cutom Exception to make the user understand the problem
+//Custom Exception to make the user understand the problem
 //Good Practice
 public class MyException extends Exception{
 	public MyException(){

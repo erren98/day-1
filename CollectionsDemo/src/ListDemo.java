@@ -16,6 +16,7 @@ public class ListDemo {
 		List<Book> books = new ArrayList<Book>();
 
 		Book book1 = new Book("learn java");
+		//Here we are using f to indicate the float value 
 		book1.setPrice(100.0f);
 		book1.setPublishYear(1990);
 		books.add(book1);

@@ -1,4 +1,4 @@
-package com.ibm;
+ package com.ibm;
 
 
 class Book{
@@ -8,7 +8,7 @@ class Book{
 		return title;
 	}
 
-	public void setTitle(String title) throws MyException,Exception {
+	public void setTitle(String title) throws MyException{
 		if(title == null) {
 			
 			throw new MyException("title is null");
@@ -33,7 +33,7 @@ public class Application {
 		try {
 			book.setTitle(null);
 		}
-		//More specific exception or the subclass of the exception calss should be mentioned first
+		//More specific exception or the subclass of the exception class should be mentioned first
 		//To avoid the exception
 		catch(IllegalArgumentException argumentException) {
 			argumentException.printStackTrace();
