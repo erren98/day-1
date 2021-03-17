@@ -2,15 +2,17 @@
 public class Application {
 	
 	public static void main(String[] args) {
-		Bug bug = new Bug();
 		
-		Employee tester = new Tester();
-		Employee developer = new Developer();
+		Bug bug1 = new Bug(BUGSTATUS.OPEN,SEVERITY.HIGH,"1","StackoverFlow error","first error","project1","developer1","tester1");
 		
-		tester.addBug("2", "firstBug", "StackOverflow error", SEVERITY.HIGH, BUGSTATUS.OPEN, "tester1", "developer1", "project1");
-		developer.editBugStatus("1", BUGSTATUS.VERIFIED, SEVERITY.MEDIUM);
-		tester.action(bug, BUGSTATUS.NEED_MORE_INFO);
-		developer.closeBug("1");
+		Employee tester = new Tester("Ram");
+		Developer developer = new Developer();
+		
+		developer.addBug(bug1);
+//		developer.editBugStatus(bug1, BUGSTATUS.VERIFIED, SEVERITY.MEDIUM);
+//		developer.showBug(bug1);
+////		tester.action(bug, BUGSTATUS.NEED_MORE_INFO);
+//		developer.closeBug(bug1);
 
 	}
 

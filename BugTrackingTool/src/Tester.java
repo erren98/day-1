@@ -1,6 +1,10 @@
 
 public class Tester extends Employee{
 	
+	public Tester(String name){
+		setName(name); 
+	}
+	
 //	private String name;
 //	private int id;
 //	private String email;
@@ -28,6 +32,7 @@ public class Tester extends Employee{
 //	}
 	
 	//Actions to be taken by tester
+//TODO: TO BE COMPLETED
 	public void  action(Bug bug,BUGSTATUS bugstatus) {
 		
 		if( bugstatus == BUGSTATUS.NEED_MORE_INFO ) {
@@ -36,6 +41,11 @@ public class Tester extends Employee{
 		else if(bugstatus == BUGSTATUS.FIXED) {
 			System.out.println("Status of bug with bug id "+ ""+ getId() + " is " + BUGSTATUS.FIXED);
 		}
+	}
+	
+	@Override
+	public String toString() {
+		return getName();
 	}
 	
 
