@@ -1,6 +1,6 @@
 
 public class Tester extends Employee{
-	private static String bugId;
+	
 //	private String name;
 //	private int id;
 //	private String email;
@@ -29,12 +29,12 @@ public class Tester extends Employee{
 	
 	//Actions to be taken by tester
 	public void  action(Bug bug,BUGSTATUS bugstatus) {
-		bugId = bug.getBugID();
+		
 		if( bugstatus == BUGSTATUS.NEED_MORE_INFO ) {
 			System.out.println("Tester do some actions");
 		}
 		else if(bugstatus == BUGSTATUS.FIXED) {
-			System.out.println("Status of bug with bug id "+ ""+ bugId + " is " + BUGSTATUS.FIXED);
+			System.out.println("Status of bug with bug id "+ ""+ getId() + " is " + BUGSTATUS.FIXED);
 		}
 	}
 	
