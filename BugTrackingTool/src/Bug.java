@@ -3,40 +3,40 @@
 public class Bug {
 	// Bug status object
 	// Default
-	BUGSTATUS bugStatus = BUGSTATUS.OPEN;
+	BUGSTATUS bugStatus;
+	SEVERITY severity;
 
 	private static String bugID;
 	private String bug_description;
 	private String bug_title;
 	private String bug_projectID;
-	private String bug_priority;
-//	public enum bug_status {
-//		OPEN, RESOLVED, CLOSED
-//	}
+	//private String bug_projectpriority;
 	private String bug_developerID;
 	private String bug_testerID;
 	//private Date bug_due_date = new Date();
 
 	// Add a bug
-	public void addBug(String bugId,String bug_title, String bug_description, String bug_priority, BUGSTATUS bs,
+	public void addBug(String bugId,String bug_title, String bug_description, SEVERITY severity, BUGSTATUS bugstatus,
 			String bug_testerID, String bug_developerID, String bug_projectID) {
-		bs = BUGSTATUS.OPEN;
-		this.bugID = bugId;
-		this.bugStatus = bs;
+		this.bugStatus = bugStatus;
+		this.severity = severity;
+		Bug.bugID = bugId;
+		//this.bugStatus = bs;
 		this.bug_description = bug_description;
 		this.bug_title = bug_title;
 		this.bug_projectID = bug_projectID;
-		this.bug_priority = bug_priority;
+//		this.bug_priority = bug_priority;
 		this.bug_developerID = bug_developerID;
 		this.bug_testerID = bug_testerID;
-		System.out.println(getBugID() + " Bug  added... " + "with status " + bs);
+		System.out.println(getBugID() + " Bug  added... " + "with status " + bugstatus + " and Severity as " + severity);
 		
 	}
 
 	// edit a bugstatus
-	public void editBugStatus(String bugID, BUGSTATUS bugStatus) {
+	public void editBugStatus(String bugID, BUGSTATUS bugStatus,SEVERITY severity) {
 		//bugStatus = BUGSTATUS.VERIFIED;
-		System.out.println("Bug Status changed to " + bugStatus);
+		System.out.println("Bug Status changed to " + bugStatus + " and Bug Severity is changed to " + severity);
+
 	}
 
 	// close a bug
@@ -80,14 +80,14 @@ public class Bug {
 	public void setBug_projectID(String bug_projectID) {
 		this.bug_projectID = bug_projectID;
 	}
-
-	public String getBug_priority() {
-		return bug_priority;
-	}
-
-	public void setBug_priority(String bug_priority) {
-		this.bug_priority = bug_priority;
-	}
+//
+//	public String getBug_priority() {
+//		return bug_priority;
+//	}
+//
+//	public void setBug_priority(String bug_priority) {
+//		this.bug_priority = bug_priority;
+//	}
 
 	public String getBug_developerID() {
 		return bug_developerID;
@@ -107,7 +107,7 @@ public class Bug {
 	
 	@Override
 	public String toString() {
-		return "Name of the bug is" + getBug_title();
+		return "Name of the bug is" + this.getBug_title();
 	}
 
 	
