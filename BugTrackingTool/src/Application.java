@@ -5,10 +5,12 @@ public class Application {
 		
 		Bug bug1 = new Bug(BUGSTATUS.OPEN,SEVERITY.HIGH,"1","StackoverFlow error","first error","project1","developer1","tester1");
 		
-		Employee tester = new Tester("Ram");
-		Developer developer = new Developer();
 		
-		developer.addBug(bug1);
+		Tester tester = new Tester("Ram");
+		Developer developer = new Developer("Shyam");
+		Manager manager  = new Manager();
+		manager.assign(bug1, tester);
+		//developer.addBug(bug1);
 //		developer.editBugStatus(bug1, BUGSTATUS.VERIFIED, SEVERITY.MEDIUM);
 //		developer.showBug(bug1);
 ////		tester.action(bug, BUGSTATUS.NEED_MORE_INFO);

@@ -1,8 +1,14 @@
 
 public class Manager extends Employee {
+	BUGSTATUS bugstatus;
 	
-	public void assign(Bug b1,Tester tester1) {
-		System.out.println("Bug with id " + b1.getId() + " is assigned to " + tester1 );
+	public void approvalStatus() {
+		
+		if(bugstatus == BUGSTATUS.CLOSED) {
+			System.out.println("Bug is approved");
+		}
 	}
+	
+	
 
 }

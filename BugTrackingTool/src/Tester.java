@@ -5,31 +5,7 @@ public class Tester extends Employee{
 		setName(name); 
 	}
 	
-//	private String name;
-//	private int id;
-//	private String email;
-	
-	//BUGSTATUS bugstatus = BUGSTATUS.OPEN;
-	
-	
-//	public String getName() {
-//		return name;
-//	}
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//	public int getTesterId() {
-//		return id;
-//	}
-//	public void setTesterId(int testerId) {
-//		this.id = testerId;
-//	}
-//	public String getEmail() {
-//		return email;
-//	}
-//	public void setEmail(String email) {
-//		this.email = email;
-//	}
+
 	
 	//Actions to be taken by tester
 //TODO: TO BE COMPLETED
@@ -41,6 +17,26 @@ public class Tester extends Employee{
 		else if(bugstatus == BUGSTATUS.FIXED) {
 			System.out.println("Status of bug with bug id "+ ""+ getId() + " is " + BUGSTATUS.FIXED);
 		}
+	}
+	
+	public void addBug(Bug b1) {
+		System.out.println(b1.getId() + " Bug  added... " + "with status " + b1.getBugstatus()+ " and Severity as " + b1.getSeverity());
+	}
+	
+	public void editBugStatus(Bug b1, BUGSTATUS bugStatus, SEVERITY severity) {
+		b1.setBugstatus(bugStatus);
+		b1.setSeverity(severity);
+		System.out.println(b1.getId()+ " " +"Bug Status changed to " + b1.getBugstatus() + " and Bug Severity is changed to " + b1.getSeverity());
+
+	}
+
+	public void showReport(Bug bug1) {
+		System.out.println("Bug Name: " + bug1.getTitle() + " Bug description: " + bug1.getDescription() + "Bug Status :" + bug1.getBugstatus());
+	}
+	
+	public void closeBug(Bug bug1) {
+		bug1.setBugstatus(BUGSTATUS.CLOSED);
+		System.out.println("Bug with id " + bug1.getId() + " is closed and has a status " + bug1.getBugstatus());
 	}
 	
 	@Override
