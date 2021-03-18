@@ -1,11 +1,12 @@
 
 public class Developer extends Employee {
+	
 	public Developer(String name) {
 		setName(name);
 	}
 
-	public void assign(Bug b1,Tester tester1) {
-		System.out.println("Bug with id " + b1.getId() + " is assigned to " + tester1 );
+	public void assign(Bug bug1,Tester tester1) {
+		System.out.println("Bug with id " + bug1.getId() + " is assigned to " + tester1 );
 	}
 	
 	
