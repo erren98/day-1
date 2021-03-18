@@ -9,7 +9,7 @@ public class Application {
 		
 		Tester tester = new Tester("Ram");
 		Developer developer = new Developer("Shyam");
-		Manager manager  = new Manager("Rohan");
+		Manager manager  = new Manager("Rohan","rohan@gmail.com");
 		
 		developer.assign(bug1, tester);
 		tester.addBug(bug1);
@@ -17,6 +17,7 @@ public class Application {
 		tester.editBugStatus(bug1, BUGSTATUS.VERIFIED, SEVERITY.LOW);
 		tester.closeBug(bug1);
 		tester.showReport(bug1);
+		tester.mail(manager);
 		manager.approvalStatus(bug1);
 
 	}

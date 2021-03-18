@@ -1,5 +1,6 @@
 
 public class Tester extends Employee{
+	Manager manager;
 	
 	public Tester(String name){
 		setName(name); 
@@ -37,6 +38,11 @@ public class Tester extends Employee{
 	public void closeBug(Bug bug1) {
 		bug1.setBugstatus(BUGSTATUS.CLOSED);
 		System.out.println("Bug with id " + bug1.getId() + " is closed and has a status " + bug1.getBugstatus());
+	}
+	
+	public void mail(Manager manager) {
+		String managerEmail = manager.getEmail();
+		System.out.println("Mailing the bug report to " + manager.getName() + " with email id : " + manager.getEmail());
 	}
 	
 	@Override

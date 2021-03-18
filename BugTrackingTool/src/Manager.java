@@ -2,7 +2,8 @@
 public class Manager extends Employee {
 	BUGSTATUS bugstatus;
 	
-	public Manager(String name) {
+	public Manager(String name,String email) {
+		setEmail(email);
 		setName(name);
 	}
 	
