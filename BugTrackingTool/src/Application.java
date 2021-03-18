@@ -9,13 +9,15 @@ public class Application {
 		
 		Tester tester = new Tester("Ram");
 		Developer developer = new Developer("Shyam");
-		Manager manager  = new Manager();
+		Manager manager  = new Manager("Rohan");
 		
-		//developer.addBug(bug1);
-//		developer.editBugStatus(bug1, BUGSTATUS.VERIFIED, SEVERITY.MEDIUM);
-//		developer.showBug(bug1);
-////		tester.action(bug, BUGSTATUS.NEED_MORE_INFO);
-//		developer.closeBug(bug1);
+		developer.assign(bug1, tester);
+		tester.addBug(bug1);
+		developer.editBugStatus(bug1, BUGSTATUS.FIXED, SEVERITY.HIGH);
+		tester.editBugStatus(bug1, BUGSTATUS.VERIFIED, SEVERITY.LOW);
+		tester.closeBug(bug1);
+		tester.showReport(bug1);
+		manager.approvalStatus(bug1);
 
 	}
 

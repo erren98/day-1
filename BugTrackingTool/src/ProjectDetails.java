@@ -9,7 +9,7 @@ public class ProjectDetails {
 	private String developerId;
 	private String testerId;
 	
-	public List<Bug> getBugs() {
+	public List<Bug> getBugs() {	
 		return bugs;
 	}
 	public void setBugs(List<Bug> bugs) {
@@ -39,6 +39,14 @@ public class ProjectDetails {
 	}
 	public void setTesterId(String testerId) {
 		this.testerId = testerId;
+	}
+	public ProjectDetails(ArrayList<Bug> bugs, String managerId, String developerId, String testerId, int id) {
+		super();
+		this.bugs = bugs;
+		this.managerId = managerId;
+		this.developerId = developerId;
+		this.testerId = testerId;
+		this.id = id;
 	}
 	
 	

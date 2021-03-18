@@ -1,9 +1,6 @@
 
 public class Employee {
-//	public Employee(String name) {
-//		setName(name);
-//		
-//	}
+
 	private String name;
 	private String id;
 	private String email;
@@ -31,21 +28,5 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
-	
-
-
-//	
-//	// close a bug
-//	@Override
-//	
-//	
-	//show the bug
-//	@Override
-//	public void showBug(Bug b1) {
-//		System.out.println(b1);
-//	}
-	
 	
 }

@@ -15,6 +15,13 @@ public class Developer extends Employee {
 
 	}
 	
+	public void editBugStatus(Bug b1, BUGSTATUS bugStatus, SEVERITY severity) {
+		b1.setBugstatus(bugStatus);
+		b1.setSeverity(severity);
+		System.out.println(b1.getId()+ " " +"Bug Status changed to " + b1.getBugstatus() + " and Bug Severity is changed to " + b1.getSeverity());
+
+	}
+	
 	@Override
 	public String toString() {
 		return getName();
