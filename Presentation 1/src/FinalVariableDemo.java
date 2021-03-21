@@ -10,9 +10,10 @@ public class FinalVariableDemo {
 }
 
 class Bike1{
-	final int speed = 90; //Final variable
+	 int speed = 90; //Final variable
 	void run() {
 		speed = 100;
+		System.out.println(speed);
 	}
 }
 
