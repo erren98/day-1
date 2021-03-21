@@ -1,6 +1,0 @@
-package com;
-
-public class A {
-	protected int age = 10;
-
-}

@@ -23,7 +23,7 @@ class A {
 
 	void m2() throws Exception {
 		System.out.println("m2");
-		//	throw new Exception();
-		// throw new RuntimeException();
+		//throw new Exception();
+		throw new RuntimeException();
 	}
 }

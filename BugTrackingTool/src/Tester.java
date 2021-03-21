@@ -2,6 +2,8 @@
 public class Tester extends Employee{
 	Manager manager;
 	
+	public Tester(){};
+	
 	public Tester(String name){
 		setName(name); 
 	}

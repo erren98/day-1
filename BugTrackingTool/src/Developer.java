@@ -1,6 +1,8 @@
 
 public class Developer extends Employee {
 	
+	public Developer() {};
+	
 	public Developer(String name) {
 		setName(name);
 	}

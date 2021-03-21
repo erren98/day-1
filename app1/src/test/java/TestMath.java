@@ -1,11 +1,12 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.Before;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import junit.framework.Assert;
+
 
 class TestMath {
 	Math math;
@@ -22,7 +23,7 @@ class TestMath {
 	void testAdd() {
 		
 		int result = math.add(1,2,3);
-		Assert.assertEquals(6, result);
+		assertEquals(6, result);
 
 	}
 	
@@ -30,7 +31,7 @@ class TestMath {
 	void testAddWithNegativeNumbers() {
 		
 		int result = math.add(-1,-2,-3);
-		Assert.assertEquals(-6, result);
+		assertEquals(-6, result);
 
 	}
 	
@@ -38,29 +39,29 @@ class TestMath {
 	void testMultiply() {
 		
 		int result = math.multiply(3,2,3);
-		Assert.assertEquals(18, result);
+		assertEquals(18, result);
 	}
 	
 	@Test
 	void testMultiplyByOneZero() {
 		
 		int result = math.multiply(0,2,3);
-		Assert.assertEquals(0, result);
+		assertEquals(0, result);
 		
 	}
 	
-	@Test()
+//	@Test()
 	//Corner Cases
-	void testMultiplyByOneNegative() {
-		//Exception handling in JUnit 5
-		Exception exception = assertThrows(IllegalArgumentException.class,()->{
-			
-			int result = math.multiply(-1,2,3);
-		});
-		//No assertion required here
-		//Assert.assertEquals(-6, result);
-		
-	}
+//	void testMultiplyByOneNegative() {
+//		//Exception handling in JUnit 5
+//		Exception exception = assertThrows(IllegalArgumentException.class,()->{
+//			
+//			int result = math.multiply(-1,2,3);
+//		});
+//		//No assertion required here
+//		//Assert.assertEquals(-6, result);
+//		
+//	}
 	
 	
 	

@@ -1,5 +1,5 @@
 
-public interface IAccount {//abstraction
+public interface IAccount {
 	public void deposit() ; //abstract method
 
 }

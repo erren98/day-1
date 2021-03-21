@@ -10,6 +10,9 @@ public class Bug {
 	private String projectID;
 	private String developerID;
 	private String testerID;
+	
+	public Bug() {
+	}
 
 	// Getters and Setters
 	public SEVERITY getSeverity() {
